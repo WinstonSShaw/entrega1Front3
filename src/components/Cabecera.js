@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from  "react-router-dom"
 
 // El componente Cabera no tiene componentes hijos.
 // ESTADO: Cabecera no tiene estado.
@@ -14,6 +15,9 @@ export default function Cabecera(props) {
   return (
     <header>
         {/* maquetar Cabecera aquí */}
+        
+      <button><Link to={"/"}>Comprar</Link> </button>
+      <button><Link to={"/aboutus"}>About Us</Link> </button>
       <h1>Carrito de compras</h1>
       <p>Cantidad de productos <span>{totalCompra}</span></p>
         

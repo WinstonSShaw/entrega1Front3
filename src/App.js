@@ -8,6 +8,8 @@ import React, { useState } from "react";
 import Cabecera from "./components/Cabecera";
 import Listado from "./components/Listado";
 
+
+
 function App() {
 
   const [totalCompra, setTotalCompra] = useState(0);
@@ -20,6 +22,7 @@ function App() {
 
   return (
     <div className="App">
+
       <Cabecera totalCompra={totalCompra}/>
       <Listado sumarCompra={sumarCompra}/>
     </div>
