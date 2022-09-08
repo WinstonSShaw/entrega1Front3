@@ -15,9 +15,12 @@ export default function Cabecera(props) {
   return (
     <header>
         {/* maquetar Cabecera aquí */}
-        
-      <button><Link to={"/"}>Comprar</Link> </button>
-      <button><Link to={"/aboutus"}>About Us</Link> </button>
+      <ul style={{ listStyle: 'none' }}>
+        <li><Link to={"/"}>Comprar</Link></li>
+        <li><Link to={"/aboutus"}>About Us</Link></li>
+      </ul>
+       
+      
       <h1>Carrito de compras</h1>
       <p>Cantidad de productos <span>{totalCompra}</span></p>
         
